@@ -20,7 +20,7 @@ years = df['Year'].unique()
 ## main layout 
 app.layout = html.Div([
     html.H1("Analysis of Video Game sales from 2000 to 2015", style={'color': 'white','textAlign': 'center'}),
-    dcc.Tabs(children=[             ### Re1 - Abzal
+    dcc.Tabs(children=[             
         dcc.Tab(label='Line Chart for video games by year',
                 children=[
                     html.H2('Line Chart', style={'color': 'white'}),
@@ -38,7 +38,7 @@ app.layout = html.Div([
         'Created by: Abzal-COHNDDS232F-007', style={'color': 'white'}
     )            
                 ]),
-        dcc.Tab(label='Scatter Plot for video games', children=[   ### req 2 - Sithumi 
+        dcc.Tab(label='Scatter Plot for video games', children=[   
             html.H2('Scatter Plot', style={'color': 'white'}),
             dcc.RadioItems(
                 id='scatter-plot-radio',
@@ -52,7 +52,7 @@ app.layout = html.Div([
         'Created by: Sithumi-COHNDDS232F-010', style={'color': 'white'}
     )    
         ]),
-        dcc.Tab(label='Interactive Charts for video games', children=[     ### req 3 - Abzal
+        dcc.Tab(label='Interactive Charts for video games', children=[     
             html.H2('Interactive Charts', style={'color': 'white'}),
             html.Div([
                 dcc.Graph(
@@ -70,7 +70,7 @@ app.layout = html.Div([
     )        
             ])
         ]),
-        dcc.Tab(label='Custom Graph for video games', children=[          ### req 4 - Sithumi
+        dcc.Tab(label='Custom Graph for video games', children=[         
             html.H2('Pie Chart', style={'color': 'white'}),  
             dcc.Graph(
                 id='pie-chart',
